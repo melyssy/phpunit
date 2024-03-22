@@ -1,6 +1,8 @@
 {
   "name": "hexlet/phpunit",
-  "bin": ["bin/php-package"],
+  "bin": [
+    "bin/php-package"
+  ],
   "type": "library",
   "authors": [
     {
@@ -15,12 +17,15 @@
   },
   "autoload": {
     "psr-4": {
-      "Php\\Package\\": "src"
-    }
+      "Php\\Phpunit\\": "src"
+    },
+    "files": [
+      "src/Utils.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
-      "Php\\Package\\Tests\\": "tests"
+      "Php\\Phpunit\\Tests\\": "tests"
     }
   },
   "require": {
